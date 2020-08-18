@@ -1,5 +1,5 @@
 body { text-align: center; }
-.wrap { display: flex; justify-content: center; margin-bottom: 50px; }
+.wrap { display: flex; justify-content: center; margin-bottom: 50px;}
 .win_num, .bonus { position: relative; }
 .desc {
   position: absolute; bottom: -30px; left: 50%; transform: translate(-50%, 0);
@@ -25,3 +25,13 @@ body { text-align: center; }
 .plus { font-size: 30px; line-height: 55px; padding: 20px; color: #999; }
 .btn_start { padding: 10px 20px; border: 1px solid #ddd; cursor: pointer; }
 button:focus { outline: none; }
+
+@media (max-width: 700px) {
+  .wrap { flex-direction: column; }
+  .ball { 
+    width: 45px; height: 45px;
+    font-size: 23px; line-height: 48px;}
+  .plus {
+    margin-top: 20px;
+  }
+}
